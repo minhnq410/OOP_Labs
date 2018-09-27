@@ -12,7 +12,7 @@ package gcd_fib;
 public class Gcd_Fib {
     
     //Dung thuat toan Euclid va de quy
-    static int Gcd (int a, int b){
+    int Gcd (int a, int b){
         if (a == 0){
             if (b > 0){
                 return b;
@@ -22,7 +22,7 @@ public class Gcd_Fib {
         return Gcd(b % a, a);
     }
     // Dung de quy
-    static int Fib (int n){
+    int Fib (int n){
         if (n == 0){
             return 0;
         }
@@ -37,8 +37,9 @@ public class Gcd_Fib {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println(Gcd (-45,15));
-        System.out.println(Fib(6));
+        Gcd_Fib obj = new Gcd_Fib();
+        System.out.println(obj.Gcd (-45,15));
+        System.out.println(obj.Fib(6));
     }
     
 }

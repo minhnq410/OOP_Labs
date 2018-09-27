@@ -19,7 +19,9 @@ public class PhanSo {
     }
 
     public void setMauSo(int MauSo) {
-        this.MauSo = MauSo;
+        if(MauSo != 0) {
+            this.MauSo = MauSo;
+        } else System.out.println("Mau so phai khac 0");
     }
 
     public int getTuSo() {
@@ -31,9 +33,11 @@ public class PhanSo {
     }
 
     public PhanSo(int TuSo, int MauSo) {
-        int gcd = Gcd(TuSo, MauSo);
-        this.TuSo = TuSo / gcd;
-        this.MauSo = MauSo / gcd;        
+        this.TuSo = TuSo;
+        if(MauSo != 0) {
+            this.MauSo = MauSo;
+        } else System.out.println("Mau so phai khac 0");
+        this.ToiGian();
     }
     
     public PhanSo(PhanSo ps) {
