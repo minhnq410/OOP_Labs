@@ -48,7 +48,7 @@ public class Lab06 {
         layer_1.addTo(d);
         d.add(layer_2);
         
-        //Test remove function
+        //Test remove methods
         d.drawDiagram();
         
         layer_1.removeTriangles();
