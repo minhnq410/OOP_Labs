@@ -10,11 +10,12 @@ class Square extends Expression {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String s = "(" + expression.toString() + ")^2";
+        return s;
     }
 
     @Override
     public int evaluate() {
-        return 1;
+        return expression.evaluate() * expression.evaluate();
     }    
 }

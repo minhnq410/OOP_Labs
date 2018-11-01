@@ -12,21 +12,22 @@ class Subtraction extends BinaryExpression {
 
     @Override
     public Expression left() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return left;
     }
 
     @Override
     public Expression right() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return right;
     }
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String s = "(" + left.toString() + " - " + right.toString() + ")";
+        return s;
     }
 
     @Override
     public int evaluate() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return left.evaluate() - right.evaluate();
     }
 }

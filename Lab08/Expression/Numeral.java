@@ -14,8 +14,8 @@ class Numeral extends Expression {
 
     @Override
     public String toString() {
-        String s = null;
-        s.valueOf(value);
+        String s = "";
+        s = s + value;
         return s;
     }
 
